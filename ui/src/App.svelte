@@ -9,6 +9,7 @@ import Processes from "./routes/Processes.svelte";
 import Processor from "./routes/Processor.svelte";
 import ProcessView from "./routes/ProcessView.svelte";
 import Settings from "./routes/Settings.svelte";
+import Navigation from "./components/Navigation.svelte";
 
 // Declare the applications top level routes
 const routes = {
@@ -24,5 +25,6 @@ const routes = {
 
 </script>
 
+<Navigation />
 <Router {routes}/>
 
