@@ -1,4 +1,5 @@
 <script lang="ts">
+
     import { location } from 'svelte-spa-router';
 
     // handle active nav-link
@@ -39,10 +40,10 @@
     </div>
 
     <div class="navigation-right nav-side">
-        <a href={currentLocation}>
+        <a href={currentLocation} on:click={() => window.MAIN_API.Win.Minimize()}>
             <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="minimize_24px"><path id="icon/action/minimize_24px" d="M7 11H17C17.55 11 18 11.45 18 12C18 12.55 17.55 13 17 13H7C6.45 13 6 12.55 6 12C6 11.45 6.45 11 7 11Z"/></g></svg>
         </a>
-        <a href={currentLocation}>
+        <a href={currentLocation} on:click|once={() => window.MAIN_API.Win.Exit()}>
             <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="clear_24px"><path id="icon/content/clear_24px" d="M18.3 5.70999C18.1132 5.52273 17.8595 5.4175 17.595 5.4175C17.3305 5.4175 17.0768 5.52273 16.89 5.70999L12 10.59L7.11 5.69999C6.92317 5.51273 6.66952 5.4075 6.405 5.4075C6.14048 5.4075 5.88683 5.51273 5.7 5.69999C5.31 6.08999 5.31 6.71999 5.7 7.10999L10.59 12L5.7 16.89C5.31 17.28 5.31 17.91 5.7 18.3C6.09 18.69 6.72 18.69 7.11 18.3L12 13.41L16.89 18.3C17.28 18.69 17.91 18.69 18.3 18.3C18.69 17.91 18.69 17.28 18.3 16.89L13.41 12L18.3 7.10999C18.68 6.72999 18.68 6.08999 18.3 5.70999Z" /></g></svg>
         </a>
     </div>
@@ -50,6 +51,7 @@
 
 <style>
     nav {
+        -webkit-app-region: drag;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -62,6 +64,8 @@
     }
 
     a {
+        -webkit-app-region: no-drag;
+        user-select: none;
         text-decoration: none;
         padding: 8px 12px;
         fill: var(--dark-grey);
@@ -78,7 +82,7 @@
 
 
     .active-tab:hover {
-        background-color: var(--lightest-grey);
+        background-color: var(--dark-grey);
         fill: var(--accent-light);
 
     }
@@ -87,6 +91,4 @@
         fill: var(--accent-light);
         background-color: var(--dark-grey);
     }
-
-
 </style>

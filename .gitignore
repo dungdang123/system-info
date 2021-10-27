@@ -3,3 +3,4 @@
 /ui/public/build/
 /backend/node_modules/
 /backend/compiled/
+/dist/

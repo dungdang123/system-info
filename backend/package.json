@@ -1,17 +1,12 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "Backend for the electron application.",
+  "description": "",
   "main": "./compiled/index.js",
   "scripts": {
-    "dev": "tsc && electron .",
-    "build": "electron-builder ."
+    "build": "tsc"
   },
   "keywords": [],
-  "author": "Tyler Laceby",
-  "license": "ISC",
-  "devDependencies": {
-    "electron": "^15.3.0",
-    "electron-builder": "^22.13.1"
-  }
+  "author": "",
+  "license": "ISC"
 }

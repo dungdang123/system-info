@@ -4,9 +4,11 @@
   "description": "A Svelte/ Electron/ Typescript application build for a quality user experience when wanting realtime system info.",
   "main": "./backend/compiled/index.js",
   "scripts": {
+    "start-backend-dev": "npm run build-backend && electron .",
+    "build-backend": "(cd backend && npm run build && cd .. )",
     "dev-ui": "(cd ui && npm run dev-ui)",
-    "build": "(cd ui && npm run build && cd ..) && (cd backend && npm run build && cd ..)",
-    "dev": "(cd ui && npm run build && cd ..) && (cd backend && npm run dev)"
+    "build": "(cd ui && npm run build && cd ..) && npm run build-backend && electron-builder",
+    "dev": "(cd ui && npm run build && cd ..) && npm run start-backend-dev"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,14 @@
   "bugs": {
     "url": "https://github.com/tylerbadger23/system-info/issues"
   },
-  "homepage": "https://github.com/tylerbadger23/system-info#readme"
+  "devDependencies": {
+    "electron": "^15.3.0",
+    "electron-builder": "^22.13.1"
+  },
+  "homepage": "https://github.com/tylerbadger23/system-info#readme",
+  "dependencies": {
+    "@types/electron-store": "^3.2.0",
+    "electron-store": "^8.0.1",
+    "v8-compile-cache": "^2.3.0"
+  }
 }
