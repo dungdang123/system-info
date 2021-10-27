@@ -1,0 +1,22 @@
+{
+  "name": "system-info",
+  "version": "1.0.0",
+  "description": "A Svelte/ Electron/ Typescript application build for a quality user experience when wanting realtime system info.",
+  "main": "./backend/compiled/index.js",
+  "scripts": {
+    "dev-ui": "(cd ui && npm run dev-ui)",
+    "build": "(cd ui && npm run build && cd ..) && (cd backend && npm run build && cd ..)",
+    "dev": "(cd ui && npm run build && cd ..) && (cd backend && npm run dev)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylerbadger23/system-info.git"
+  },
+  "keywords": [],
+  "author": "Tyler Laceby",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tylerbadger23/system-info/issues"
+  },
+  "homepage": "https://github.com/tylerbadger23/system-info#readme"
+}
