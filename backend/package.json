@@ -1,12 +1,12 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "System Information App:: Electron Backend",
   "main": "./compiled/index.js",
   "scripts": {
     "build": "tsc"
   },
   "keywords": [],
-  "author": "",
+  "author": "Tyler Laceby",
   "license": "ISC"
 }
