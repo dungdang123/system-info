@@ -9,7 +9,7 @@
     "start-backend-dev": "npm run build-backend && electron .",
     "build-backend": "(cd backend && npm run build && cd .. )",
     "dev-ui": "(cd ui && npm run dev-ui)",
-    "build": "(cd ui && npm run build && cd ..) && npm run build-backend && electron-builder",
+    "build": "npm run install-deps && (cd ui && npm run build && cd ..) && npm run build-backend && electron-builder",
     "dev": "(cd ui && npm run build && cd ..) && npm run start-backend-dev"
   },
   "repository": {
