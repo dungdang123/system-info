@@ -83,12 +83,12 @@
         -webkit-app-region: no-drag;
         user-select: none;
         text-decoration: none;
-        width: 200px;
+        width: 210px;
         padding: 15px;
         fill: var(--lighter-grey--);
         display: flex;
         align-items: center;
-        font-weight: 200;
+        font-weight: 400;
     }
 
     p {
@@ -102,19 +102,20 @@
     }
 
     a, .active-tab {
-        transition: border-right-color .6s, color .3s;
+
+        transition: border-right-color .3s, color .3s, padding.4s;
     }
 
-    a:hover {
+     .active-tab {
         border-right-color: var(--blue--);
     }
 
 
 
     .active-tab {
+        padding: 25px 15px 25px 20px;
         font-weight: 600;
         fill: var(--blue--);
         color: var(--blue--);
-        border-right-color: var(--blue--);
     }
 </style>
