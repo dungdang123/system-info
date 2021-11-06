@@ -8,7 +8,7 @@
     $: tabs_active = {
         dashboard: ($location == "/")? active_css : ico_css,
         settings: ($location == "/settings")? active_css : ico_css,
-        cpu: ($location == "/cpu")? active_css : ico_css,
+        cpu: ($location == "/performance")? active_css : ico_css,
         network: ($location == "/network")? active_css : ico_css,
         process: ($location == "/process")? active_css : ico_css,
     }
@@ -19,13 +19,13 @@
 </script>
 
 <nav>
-
+    <div class="seperator"></div>
     <div class="navigation-left nav-side">
         <a href="#/" class={tabs_active.dashboard}>
             <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="dashboard_24px"><path id="icon/action/dashboard_24px" fill-rule="evenodd" clip-rule="evenodd" d="M10 13H4C3.44995 13 3 12.55 3 12V4C3 3.45 3.44995 3 4 3H10C10.55 3 11 3.45 11 4V12C11 12.55 10.55 13 10 13ZM10 21H4C3.44995 21 3 20.55 3 20V16C3 15.45 3.44995 15 4 15H10C10.55 15 11 15.45 11 16V20C11 20.55 10.55 21 10 21ZM14 21H20C20.55 21 21 20.55 21 20V12C21 11.45 20.55 11 20 11H14C13.45 11 13 11.45 13 12V20C13 20.55 13.45 21 14 21ZM13 8V4C13 3.45 13.45 3 14 3H20C20.55 3 21 3.45 21 4V8C21 8.55 20.55 9 20 9H14C13.45 9 13 8.55 13 8Z" /></g></svg>
             <p>Dashboard</p>
         </a>
-        <a href="#/cpu" class={tabs_active.cpu}>
+        <a href="#/performance" class={tabs_active.cpu}>
             <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="memory_24px"><path id="icon/hardware/memory_24px" fill-rule="evenodd" clip-rule="evenodd" d="M21 10C21 9.45001 20.55 9 20 9H19V7C19 5.89999 18.1 5 17 5H15V4C15 3.45001 14.55 3 14 3C13.45 3 13 3.45001 13 4V5H11V4C11 3.45001 10.55 3 10 3C9.45001 3 9 3.45001 9 4V5H7C5.90002 5 5 5.89999 5 7V9H4C3.45001 9 3 9.45001 3 10C3 10.55 3.45001 11 4 11H5V13H4C3.45001 13 3 13.45 3 14C3 14.55 3.45001 15 4 15H5V17C5 18.1 5.90002 19 7 19H9V20C9 20.55 9.45001 21 10 21C10.55 21 11 20.55 11 20V19H13V20C13 20.55 13.45 21 14 21C14.55 21 15 20.55 15 20V19H17C18.1 19 19 18.1 19 17V15H20C20.55 15 21 14.55 21 14C21 13.45 20.55 13 20 13H19V11H20C20.55 11 21 10.55 21 10ZM10 9H14C14.55 9 15 9.45001 15 10V14C15 14.55 14.55 15 14 15H10C9.45001 15 9 14.55 9 14V10C9 9.45001 9.45001 9 10 9ZM11 13H13V11H11V13ZM8 17H16C16.55 17 17 16.55 17 16V8C17 7.45001 16.55 7 16 7H8C7.45001 7 7 7.45001 7 8V16C7 16.55 7.45001 17 8 17Z"/></g></svg>
             <p>Performance</p>
         </a>
@@ -40,7 +40,7 @@
 
     </div>
 
-    <div class="seperator"></div><div class="seperator"></div>
+    <div class="seperator"></div>
 
 
     <div class="navigation-right nav-side">
@@ -56,6 +56,7 @@
             <p>Exit</p>
         </a>
     </div>
+    <div class="seperator"></div>
 </nav>
 
 <style>
@@ -75,7 +76,7 @@
     }
 
     a {
-        font-size: 1.2em;
+        font-size: 1.1em;
         color: var(--lighter-grey--);
         text-align: left;
         transition: border-color 10s color .3s;
@@ -83,8 +84,8 @@
         -webkit-app-region: no-drag;
         user-select: none;
         text-decoration: none;
-        width: 210px;
-        padding: 15px;
+        width: 180px;
+        padding: 10px;
         fill: var(--lighter-grey--);
         display: flex;
         align-items: center;
@@ -92,28 +93,27 @@
     }
 
     p {
-        margin-left: 30px;
+        margin-left: 20px;
     }
 
 
     svg {
-        width: 33px;
-        height: 33px;
+        width: 25px;
+        height: 25px;
     }
 
     a, .active-tab {
-
-        transition: border-right-color .3s, color .3s, padding.4s;
+        transition: border-left-color .3s, color .3s, padding .3s;
     }
 
      .active-tab {
-        border-right-color: var(--blue--);
+        border-left-color: var(--blue--);
     }
 
 
 
     .active-tab {
-        padding: 25px 15px 25px 20px;
+        padding: 17px 10px 14px 14px;
         font-weight: 600;
         fill: var(--blue--);
         color: var(--blue--);

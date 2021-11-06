@@ -4,10 +4,9 @@ import Router from "svelte-spa-router";
 
 // Routes Head
 import Dashboard from "./routes/Dashboard.svelte";
-import Memory from "./routes/Memory.svelte";
 import Network from "./routes/Network.svelte";
 import Processes from "./routes/Processes.svelte";
-import Processor from "./routes/Processor.svelte";
+import Performance from "./routes/Performance.svelte";
 import ProcessView from "./routes/ProcessView.svelte";
 import Settings from "./routes/Settings.svelte";
 import Navigation from "./components/Navigation.svelte";
@@ -16,8 +15,7 @@ import Navigation from "./components/Navigation.svelte";
 const routes = {
 	"/": Dashboard,
 	"/settings": Settings,
-	"/cpu": Processor,
-	"/mem": Memory,
+	"/performance": Performance,
 	"/network": Network,
 	"/process": Processes,
 	// Dynamic Routes

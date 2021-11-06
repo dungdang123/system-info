@@ -4,8 +4,7 @@
   "description": "A Svelte/Electron/Typescript application built for a quality user experience when wanting realtime system info.",
   "main": "./backend/compiled/index.js",
   "scripts": {
-    
-    "install-deps": "(cd ui && npm install)",
+    "install-deps": "(cd ui && npm install && npm run dev && cd ..)",
     "start-backend-dev": "npm run build-backend && electron .",
     "build-backend": "(cd backend && npm run build && cd .. )",
     "dev-ui": "(cd ui && npm run dev-ui)",
