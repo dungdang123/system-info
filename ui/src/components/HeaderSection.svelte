@@ -17,14 +17,24 @@
 
     header {
         width: 100%;
-        padding: 40px 0px 20px 0px;
+        padding: 10px 0px 13px 0px;
         align-items: center;
         display: flex;
     }
 
     h2 {
+        margin-left: 10px;
         font-size: 1.9em;
         font-weight: 400;
+    }
+
+    @media only screen and (max-width: 820px) {
+
+        header {
+            margin: auto;
+            margin-bottom: 20px;
+            width: 90%;
+        }
     }
 
 </style>

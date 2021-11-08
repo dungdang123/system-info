@@ -32,8 +32,8 @@
     .split-top {
         margin: auto;
         display: grid;
-        grid-template-columns: 27% 73%;
-        width: 95%;
+        grid-template-columns: 34% 66%;
+        width: 100%;
         margin-top: 30px;
     }
 
@@ -42,10 +42,12 @@
         margin-top: 30px;
     }
 
-    @media only screen and (max-width: 1080px) {
+    @media only screen and (max-width: 820px) {
 
         .split-top { 
             display: block;
+            width: 90%;
+            margin: auto;
         }
     }
 </style>

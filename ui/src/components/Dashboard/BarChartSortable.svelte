@@ -27,7 +27,7 @@
         padding: 20px;
     }
 
-    @media only screen and (max-width: 1080px) {
+    @media only screen and (max-width: 820px) {
 
         main {
 

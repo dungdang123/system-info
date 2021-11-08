@@ -39,7 +39,16 @@ section {
 	background-color: var(--cream-white--);
 	width: 100%;
 	height: 100vh;
+	margin-left: 180px;
 }
+
+/* handle left-navigation bar being fixed :(  */
+@media only screen and (max-width: 1320px) {
+
+	section {
+		margin-left: 60px;
+	}
+ }
 
 
 .flex {

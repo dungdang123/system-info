@@ -63,6 +63,8 @@
 
 
     nav {
+        z-index: 100;
+        position: fixed;
         -webkit-app-region: drag;
         display: flex;
         flex-direction: column;
@@ -73,6 +75,9 @@
         display: grid;
         grid-template-columns: 100%;
         align-items: center;
+    }
+    .seperator {
+        margin-top: 70px;
     }
 
     a {
@@ -118,4 +123,17 @@
         fill: var(--blue--);
         color: var(--blue--);
     }
+
+
+    @media only screen and (max-width: 1320px) {
+
+        p{ 
+            display: none;
+        }
+
+        a {
+            width: 30px;
+        }
+    }
+
 </style>
