@@ -11,6 +11,23 @@
     "build": "npm run install-deps && (cd ui && npm run build && cd ..) && npm run build-backend && electron-builder",
     "dev": "(cd ui && npm run build && cd ..) && npm run start-backend-dev"
   },
+
+  "build": {
+    "appId": "systr",
+    "win": {
+      "target": ["nsis"],
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": true,
+      "installerIcon": "icon.ico",
+      "uninstallerIcon": "icon.ico",
+      "uninstallDisplayName": "systr",
+      "license": "license.md",
+      "allowToChangeInstallationDirectory": false
+    }
+  },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tylerbadger23/system-info.git"
