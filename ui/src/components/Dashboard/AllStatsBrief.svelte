@@ -9,7 +9,7 @@
         <h2>45.4%</h2>
     </div>
 
-    <div class="split-50" in:scale={{duration: 1100}}>
+    <div class="split-50" in:scale={{duration: 1000}}>
         <div class="stats-container B-R">
             <h5>CPU Usage</h5>
             <h3>29.4%</h3>
@@ -91,6 +91,33 @@
         grid-template-columns: 44% 56%;
     }
 
+    /*@media only screen and (max-width: 1080px) and (min-width: 880px) {
 
+    .split-50 {
+        margin: auto;
+        text-align: center;
+        display: block;
+    }
+    
+    h4 {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 1.8em;
+    }
+
+    h5 {
+        font-size: .8em;
+    }
+
+    h3 {
+        font-size: 1.7em;
+    }
+
+}
+
+*/
 
 </style>

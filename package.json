@@ -15,7 +15,13 @@
     "type": "git",
     "url": "git+https://github.com/tylerbadger23/system-info.git"
   },
-  "keywords": ["system-usage", "system-info", "cpu", "memory", "JSimplified"],
+  "keywords": [
+    "system-usage",
+    "system-info",
+    "cpu",
+    "memory",
+    "JSimplified"
+  ],
   "author": "Tyler Laceby",
   "license": "ISC",
   "bugs": {
@@ -28,7 +34,9 @@
   "homepage": "https://github.com/tylerbadger23/system-info#readme",
   "dependencies": {
     "@types/electron-store": "^3.2.0",
+    "chart.js": "^3.6.0",
     "electron-store": "^8.0.1",
+    "systeminformation": "^5.9.9",
     "v8-compile-cache": "^2.3.0"
   }
 }

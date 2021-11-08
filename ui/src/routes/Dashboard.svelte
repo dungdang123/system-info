@@ -7,7 +7,6 @@
     import UsageCircularChart from "../components/Dashboard/UsageCircularChart.svelte";
     import BarChartSortable from "../components/Dashboard/BarChartSortable.svelte";
 
-
 </script>
 
 
@@ -28,16 +27,25 @@
 
 
 <style>
+
     
     .split-top {
+        margin: auto;
         display: grid;
-        grid-template-columns: 40% 60%;
-        width: 100%;
+        grid-template-columns: 27% 73%;
+        width: 95%;
         margin-top: 30px;
     }
 
     .split-bottom {
         width: 100%;
         margin-top: 30px;
+    }
+
+    @media only screen and (max-width: 1080px) {
+
+        .split-top { 
+            display: block;
+        }
     }
 </style>
